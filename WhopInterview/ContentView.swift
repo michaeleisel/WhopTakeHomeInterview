@@ -26,11 +26,7 @@ struct SiteCellView: View {
     
     var body: some View {
         return NavigationLink(destination: WebView(site: site)) {
-            HStack {
-                Image(systemName: "arrow.up.right.square")
-                    .foregroundColor(.blue)
-                Text(site.description).font(.headline)
-            }
+            Text(site.description).font(.headline)
         }.accessibilityLabel(site.description)
     }
 }
@@ -48,11 +44,7 @@ struct FolderCellView: View {
     }
 
     var body: some View {
-        return VStack(alignment: .leading, spacing: 0) {
-            HStack {
-                Text(folder.description).font(.headline)
-            }
-        }.accessibilityLabel(folder.description)
+        return Text(folder.description).font(.headline).accessibilityLabel(folder.description)
     }
 }
 
@@ -69,7 +61,7 @@ private func randomItem(index: Int) -> FolderItem {
     case 2:
         let items: [FolderItem] = [
             .site(Site(url: msnUrl, id: "\(id)_msn", description: "MSN")),
-            .site(Site(url: msnUrl, id: "\(id)_google", description: "Google"))
+            .site(Site(url: googleUrl, id: "\(id)_google", description: "Google"))
         ]
         return .folder(Folder(items: items, id: id, description: "Folder \(index)"))
     default:
