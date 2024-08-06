@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "ettrace",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EmergeTools/ETTrace",
+      "state" : {
+        "branch" : "main",
+        "revision" : "27d92ce82e3306b4abd84661cf02826bcaefb0c4"
+      }
+    },
+    {
+      "identity" : "peertalk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EmergeTools/peertalk.git",
+      "state" : {
+        "revision" : "02b8bebff91cd3d7a5d89c0ddb4bbd873c62879d",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "swifter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/httpswift/swifter.git",
+      "state" : {
+        "revision" : "9483a5d459b45c3ffd059f7b55f9638e268632fd",
+        "version" : "1.5.0"
+      }
+    }
+  ],
+  "version" : 2
+}
